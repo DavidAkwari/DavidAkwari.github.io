@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quiz – Ballon d'Or Knowledge Check</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Ballon d'Or – Quick Quiz</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="2018.html">2018</a></li>
+        <li><a href="2019.html">2019</a></li>
+        <li><a href="2021.html">2021+</a></li>
+        <li><a href="keyconcepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="quiz-container" id="quiz">
+      <h2>Self-Assessment: Ballon d'Or Winners</h2>
+      <p class="small-note">Complete the quiz and click <strong>Submit</strong>. Passing score: 60%</p>
+
+      <form id="quizForm">
+        <!-- 1) Fill-in -->
+        <div class="form-group">
+          <label for="q1input">1) Fill in the blank: The 2018 Ballon d'Or winner, Luka ________ (last name).</label>
+          <input type="text" id="q1input" name="q1" placeholder="Type the last name here" autocomplete="off"/>
+          <div class="q-feedback" id="q1feedback"></div>
+        </div>
+
+        <!-- 2) Radio -->
+        <div class="form-group">
+          <label>2) Who won the Ballon d'Or in 2019?</label>
+          <div class="answers">
+            <label><input type="radio" name="q2" value="a"> Cristiano Ronaldo</label><br/>
+            <label><input type="radio" name="q2" value="b"> Lionel Messi</label><br/>
+            <label><input type="radio" name="q2" value="c"> Luka Modrić</label><br/>
+          </div>
+          <div class="q-feedback" id="q2feedback"></div>
+        </div>
+
+        <!-- 3) Radio -->
+        <div class="form-group">
+          <label>3) Which player won a Ballon d'Or after winning the World Cup with his country?</label>
+          <div class="answers">
+            <label><input type="radio" name="q3" value="a"> Lionel Messi</label><br/>
+            <label><input type="radio" name="q3" value="b"> Kylian Mbappé</label><br/>
+            <label><input type="radio" name="q3" value="c"> Luka Modrić</label><br/>
+          </div>
+          <div class="q-feedback" id="q3feedback"></div>
+        </div>
+
+        <!-- 4) Multi-select -->
+        <div class="form-group">
+          <label>4) Select <strong>all</strong> achievements that applied to Karim Benzema in his Ballon d'Or-winning season.</label>
+          <div class="answers">
+            <label><input type="checkbox" name="q4" value="a"> UEFA Champions League top scorer</label><br/>
+            <label><input type="checkbox" name="q4" value="b"> Won the World Cup</label><br/>
+            <label><input type="checkbox" name="q4" value="c"> La Liga champion</label><br/>
+            <label><input type="checkbox" name="q4" value="d"> Copa América winner</label><br/>
+          </div>
+          <div class="q-feedback" id="q4feedback"></div>
+        </div>
+
+        <div style="text-align:center;margin-top:12px">
+          <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+          <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <div id="resultsArea"></div>
+    </div>
+  </main>
+
+  <footer><p>This is a class project for <a href="https://ksuweb.github.io/IT3203/">IT 3203 Web Development</a>.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
